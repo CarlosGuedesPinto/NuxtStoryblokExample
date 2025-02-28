@@ -1,0 +1,11 @@
+.pair {
+  display: grid;
+  grid-template-columns: auto;
+  grid-template-rows: auto auto;
+  gap: 16px;
+
+  @media screen and (min-width: 832px) {
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: auto;
+  }
+}

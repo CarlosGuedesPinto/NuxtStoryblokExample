@@ -1,0 +1,25 @@
+.list {
+  padding-top: 16px;
+  display: grid;
+
+  &--border {
+    padding: 16px;
+    border-radius: 8px;
+    border: 1px solid #0082FF;
+  }
+  
+  &__list {
+    color: #313233;
+  }
+
+  &__item {
+    display: flex;
+    align-items: baseline;
+    gap: 10px;
+  }
+
+  &__dash-image {
+    height: 14px;
+    width: 12px;
+  }
+}

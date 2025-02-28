@@ -1,0 +1,74 @@
+.button {
+  justify-content: space-between;
+  border-radius: 8px;
+  padding: 8px;
+  display: flex;
+  font-size: 20px;
+  width: 256px;
+
+  @media screen and (min-width: 832px) {
+    width: 216px;
+    font-size: 14px;
+
+    &__icon {
+      width: 12px;
+      height: 10px;
+    }
+  }
+
+  &__icon {
+    align-self: center;
+    width: 16px;
+    height: 14px;
+  }
+
+  &--secondary {
+    border: 1px solid #F7FBFF;
+    color: #F7FBFF;
+
+    &:hover {
+      background-color: #F7FBFF;
+      color: #0082FF;
+    }
+
+    .button {
+      &__icon {
+        content: url('~/assets/icons/ArrowRightWhite.svg')
+      }
+    }
+  }
+
+  &--primary {
+    border: 1px solid #0082FF;
+    color: #0082FF;
+  }
+
+  &:hover {
+    border-color: #FF9E00;
+
+    .button__icon {
+      content: url('~/assets/icons/ArrowRightOrange.svg');
+    }
+  }
+
+  &:active {
+    border-color: #FF9E00;
+    color: #FF9E00;
+
+    .button__icon {
+      content: url('~/assets/icons/ArrowRightOrange.svg');
+    }
+  }
+
+  &--disabled {
+    color: #F7FBFF !important;
+    background-color: #80C0FF;
+    border: 1px solid #0082FF;
+
+    &:hover, &:active {
+      color: #F7FBFF;
+      border-color: #0082FF;
+      color: #80C0FF;
+    }
+  }
+}

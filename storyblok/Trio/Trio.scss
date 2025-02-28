@@ -1,0 +1,15 @@
+.trio {
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-template-rows: 1fr 1fr 1fr;
+  gap: 16px;
+
+  @media screen and (min-width: 1408px) {
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 1fr;
+  }
+
+  &__item {
+    height: 100%;
+  }
+}

@@ -1,0 +1,33 @@
+/* @font-face( PPMori, '~/assets/fonts/PPMori-Regular', 400, normal, otf); */
+@font-face {
+  font-family: 'LDTech';
+  src: url('~/assets/fonts/LD_TechD-Regular.ttf') format('truetype');
+}
+
+@font-face {
+  font-family: 'PPMori';
+  src: url('~/assets/fonts/PPMori-Regular.ttf') format('truetype');
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'PPMori-Extrabold';
+  src: url('~/assets/fonts/PPMori-ExtraBold.ttf') format('truetype');
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'PPMori-Semibold';
+  src: url('~/assets/fonts/PPMori-SemiBold.ttf') format('truetype');
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'PPMori-Extralight';
+  src: url('~/assets/fonts/PPMori-Extralight.ttf') format('truetype');
+  font-style: normal;
+}
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;

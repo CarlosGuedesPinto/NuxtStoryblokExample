@@ -1,0 +1,39 @@
+.title-content {
+  width: 100%;
+  max-width: 1408px;
+  margin: auto;
+  padding-left: 16px;
+  padding-right: 16px;
+
+  &__title {
+    font-size: 55px;
+    display: inline-block;
+    line-height: 1;
+    width: 100%;
+
+    @media screen and (min-width: 832px) {
+      font-size: 65px;
+    }
+  }
+
+  &__content {
+    display: flex;
+    flex-direction: column;
+    padding-top: 14px;
+    gap: 16px;
+  }
+
+  &__title-wrapper {
+    display: flex;
+    justify-content: space-between;
+    &--border {
+      border-bottom: 1px solid #0082FF;
+    }
+  }
+
+  &__link {
+    &:hover {
+      color: #FF9E00;
+    }
+  }
+}
